@@ -1,12 +1,11 @@
 <template>
-  <tiktok-glitch>
-    我靠！
+  <tiktok-glitch speed="normal">
+    Marswiz
   </tiktok-glitch>
 </template>
 
 <script lang="ts">
 import { defineComponent } from 'vue'
-
 export default defineComponent({
   name: 'App',
   components: {
