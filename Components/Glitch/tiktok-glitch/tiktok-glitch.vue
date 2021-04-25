@@ -1,11 +1,11 @@
 <template>
-  <div id="tiktok-glitch" :class="[speedClass,isAnimated]">
+  <div :class="['fluent-tiktok-glitch',speedClass,isAnimated]">
     <slot></slot>
     <img :src="img" :alt="imgInfo" v-if="img">
   </div>
 </template>
 
-<script>
+<script lang="ts">
 import { computed } from 'vue'
 
 export default {
@@ -34,7 +34,7 @@ export default {
 
 <style scoped lang="scss">
 
-  #tiktok-glitch {
+  .fluent-tiktok-glitch {
     $move: 10;
     $opacity: 0.75;
     $colorTop: rgba(255,30,30,$opacity);
