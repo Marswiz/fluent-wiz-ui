@@ -4,6 +4,16 @@
   </tiktok-glitch>
   <card-list :cards="cards"></card-list>
   <fluent-toast>I'm Toast!</fluent-toast>
+  <flex-box direction="row" x-align="start" y-align="center" width="12em" height="4em">
+    <div>23</div>
+    <div>44</div>
+    <div>55</div>
+  </flex-box>
+  <grid-box cols="3" rows="5">
+    <grid-item x-from="1" x-to="3" y-from="2" y-to="5" style="background: tomato;">1</grid-item>
+    <grid-item>2</grid-item>
+    <grid-item>3</grid-item>
+  </grid-box>
 </template>
 
 <script lang="ts">

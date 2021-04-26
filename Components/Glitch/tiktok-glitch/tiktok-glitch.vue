@@ -7,10 +7,16 @@
 
 <script lang="ts">
 import { computed } from 'vue'
+interface Props{
+  speed?: string,
+  animate?: boolean,
+  img?: string,
+  imgInfo?: string
+}
 
 export default {
   name: 'tiktok-glitch',
-  setup (props) {
+  setup (props : Props) {
     const speedClass = computed(() => {
       if (props.speed === 'slow' || props.speed === 'fast') return props.speed + '-speed'
       else return 'normal-speed'
