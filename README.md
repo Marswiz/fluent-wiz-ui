@@ -12,5 +12,21 @@
     - `<card-list>`: 带有抽取动效的卡片类列表组件；
 - Glitch:
     - `<tiktok-glitch>`: 模仿抖音Logo的故障效果;
-
+- 按钮：
+    - `<fluent-btn>`: 基础按钮组件，包含常规、警告、成功、危险、信息等，可选圆角与扁平化按钮。
+    
 ## 安装
+
+使用npm安装，配合打包工具如Webpack等：
+
+```js
+// main.js
+import fluentWizUi from 'fluent-wiz-ui'
+import {createApp} from 'vue'
+
+// Use fluentWizAUi as Vue3 plugin.
+app = createApp(App)
+app.use(fluentWizUi)
+
+app.mount('#app')
+```

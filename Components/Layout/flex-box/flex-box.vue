@@ -63,7 +63,6 @@ export default {
 <style scoped>
   .flexBox {
     display: flex;
-    border: 1px solid black;
   }
   .rowStartStart {
   }

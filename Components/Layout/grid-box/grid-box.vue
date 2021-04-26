@@ -70,6 +70,5 @@ export default {
 
 <style scoped>
  #fluent-gridBox{
-   border: 1px solid tomato;
  }
 </style>
