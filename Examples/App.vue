@@ -1,5 +1,5 @@
 <template>
-  <tiktok-glitch speed="normal">
+  <tiktok-glitch speed="normal" style="font-size: 4em;">
     Marswiz
   </tiktok-glitch>
   <card-list :cards="cards"></card-list>

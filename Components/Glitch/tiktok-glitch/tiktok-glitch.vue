@@ -50,7 +50,6 @@ export default {
     align-items: center;
     font-weight: bold;
     font-family: Helvetica;
-    font-size: 5em;
     &.static {
       color: rgba(0,0,0,$opacity);
       filter: drop-shadow(.05em .05em 0 $colorBtm) drop-shadow(-.05em -.05em 0 $colorTop);
