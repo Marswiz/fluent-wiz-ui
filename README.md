@@ -2,7 +2,13 @@
 
 一款基于Vue3的组件库，提供多种实用组件。
 
-## 当前组件列表
+## 文档 Documentation
+
+你可以查看以下页面，快速浏览FluentWiz UI的全部组件和API：
+
+[FluentWiz UI Documentation](https://fluent-wiz-ui-9gthwmk139bb4c47-1254299756.tcloudbaseapp.com/)
+
+## 当前组件列表 Component List
 
 - 基础:
     - `<flex-box>`: 更容易理解的flexbox布局封装组件；
@@ -15,7 +21,7 @@
 - 按钮：
     - `<fluent-btn>`: 基础按钮组件，包含常规、警告、成功、危险、信息等，可选圆角与扁平化按钮。
     
-## 安装
+## 安装 Install
 
 使用npm安装，配合打包工具如Webpack等：
 
