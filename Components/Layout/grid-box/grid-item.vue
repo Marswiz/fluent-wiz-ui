@@ -39,9 +39,6 @@ export default {
     },
     yTo: {
       default: ''
-    },
-    span: {
-      default: '1'
     }
   }
 }

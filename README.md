@@ -4,7 +4,7 @@
 
 ## 文档 Documentation
 
-你可以查看以下页面，快速浏览FluentWiz UI的全部组件和API：
+你可以查看以下页面，快速浏览、掌握FluentWiz UI的全部组件和API：
 
 [FluentWiz UI Documentation](https://fluent-wiz-ui-9gthwmk139bb4c47-1254299756.tcloudbaseapp.com/)
 
@@ -19,7 +19,7 @@
 - Glitch:
     - `<tiktok-glitch>`: 模仿抖音Logo的故障效果;
 - 按钮：
-    - `<fluent-btn>`: 基础按钮组件，包含常规、警告、成功、危险、信息等，可选圆角与扁平化按钮。
+    - `<fluent-button>`: 基础按钮组件，包含常规、警告、成功、危险、信息等，可选圆角与扁平化按钮。
     
 ## 安装 Install
 
