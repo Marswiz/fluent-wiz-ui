@@ -59,6 +59,9 @@ export default {
 </script>
 
 <style scoped lang="scss">
+  button:active {
+    outline: none;
+  }
   .fluent-btn-normal {
     $bgColor: dodgerblue;
     color: white;

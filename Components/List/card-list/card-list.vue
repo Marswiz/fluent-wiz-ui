@@ -1,6 +1,6 @@
 <template>
   <div class="fluent-cardlist">
-    <a class="card" v-for="(card, index) in cards" :key="index" :href="card.link">
+    <a class="card" :style="styleObj" v-for="(card, index) in cards" :key="index" :href="card.link">
       <div class="row">
         <div class="category">{{card.category}}</div>
         <div class="date">{{card.date}}</div>
@@ -19,9 +19,21 @@
 </template>
 
 <script lang="ts">
-
+import { computed } from 'vue'
 export default {
   name: 'card-list',
+  setup (props : any) {
+    const styleObj = computed(() => {
+      return {
+        background: props.backgroundColor + ' linear-gradient(to bottom right, transparent 0, rgba(0,0,0,0.3) 75%)',
+        color: props.textColor,
+        width: props.width
+      }
+    })
+    return {
+      styleObj
+    }
+  },
   props: {
     cards: {
       type: Array,
@@ -50,16 +62,24 @@ export default {
         }
         return true
       }
+    },
+    backgroundColor: {
+      type: String,
+      default: '#aaa'
+    },
+    textColor: {
+      type: String,
+      default: 'rgba(255,255,255,0.8)'
+    },
+    width: {
+      type: String,
+      default: '200px'
     }
   }
 }
 </script>
 
 <style scoped lang="scss">
-$card-color: #666;
-$text-color: rgba(255,255,255,0.8);
-$shadow-distance: 1em;
-$tag-color: lightblue;
 
 .fluent-cardlist {
   display: flex;
@@ -67,14 +87,12 @@ $tag-color: lightblue;
 }
 
 .card {
+  $shadow-distance: 1em;
+  $tag-color: lightblue;
   display: flex;
   flex-direction: column;
   text-decoration: none;
-  // color settings.
-  color: $text-color;
-  background: linear-gradient(to bottom right, $card-color 0, darken($card-color,10%) 75%);
   box-shadow: $shadow-distance $shadow-distance $shadow-distance -1*$shadow-distance black;
-  width: 200px;
   border-radius: 10px;
   transition: all .25s;
   padding: 0 1em;

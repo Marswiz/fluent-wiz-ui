@@ -2,7 +2,7 @@
   <tiktok-glitch speed="normal" style="font-size: 4em;">
     Marswiz
   </tiktok-glitch>
-  <card-list :cards="cards"></card-list>
+  <card-list :cards="cards" width="10em"></card-list>
   <fluent-toast>I'm Toast!</fluent-toast>
   <flex-box direction="row" x-align="start" y-align="center" width="12em" height="4em">
     <div>23</div>
