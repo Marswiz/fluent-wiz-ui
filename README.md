@@ -1,5 +1,7 @@
 # fluent-wiz-ui
 
+![FluentWiz Logo](./public/fluentWizLogo.svg)
+
 一款基于Vue3的组件库，提供多种实用组件。
 
 ## 文档 Documentation
