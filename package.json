@@ -1,6 +1,6 @@
 {
   "name": "fluent-wiz-ui",
-  "version": "0.0.7",
+  "version": "0.0.9",
   "main": "./dist/fluent-wiz-ui.umd.js",
   "author": "Marswiz",
   "scripts": {

@@ -7,6 +7,7 @@ import fluentToast from './Message/fluent-toast'
 import flexBox from './Layout/flex-box'
 import { gridBox, gridItem } from './Layout/grid-box'
 import fluentButton from './Button'
+import { fluentFolder } from './Content'
 
 import type { App } from 'vue'
 interface PluginWithInstall{
@@ -21,7 +22,8 @@ const components = [
   flexBox,
   gridBox,
   gridItem,
-  fluentButton
+  fluentButton,
+  fluentFolder
 ]
 
 // plugins has its own install functions, and it's to add some global function to app.

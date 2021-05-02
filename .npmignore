@@ -8,3 +8,6 @@ vue.config.js
 *.map
 .eslintrc.js
 *.idea
+tsconfig.json
+.editorconfig
+.browserslistrc
